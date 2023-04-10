@@ -139,15 +139,17 @@ function bt9() {
     let CB = parseFloat(document.getElementById("22").value);
     let CC = parseFloat(document.getElementById("33").value);
     let kqbt9;
-    if (CA >0){
-        if (CB >0){
-            if (CC >0){
-                el
-            }
+    if (CA>0 && CB>0 && CC>0){
+        if (CA+CB>CC && CB+CC>CA && CA+CC>CB){
+            kqbt9 = "là 3 cạnh của tam giác";
+        }else {
+            kqbt9 = "ko phải 3 cạnh của tam giác";
         }
+    }else {
+        kqbt9 = "ko phải 3 cạnh của tam giác";
     }
+    document.getElementById("kqbt9").innerHTML = kqbt9;
 }
-
 
 /*bài tập10*/
 function bt10() {
